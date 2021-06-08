@@ -13,3 +13,8 @@ h1 {
   li{
       display: inline;
   }
+
+  a{
+      text-decoration: none;
+      color: #007bff;
+  }
