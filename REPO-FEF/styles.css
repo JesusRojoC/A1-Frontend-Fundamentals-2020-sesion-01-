@@ -26,6 +26,10 @@ h1 {
 
   .container{
       margin-top: 20px;
+      display: block;
+      align-items: center;
+      
+      text-align: center;
   }
 
   .header > * {
