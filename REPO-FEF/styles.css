@@ -321,5 +321,10 @@ h1 {
     background-color: transparent;
     border-color: transparent;
   }
-
-  
+  .stories {
+  display: block;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    
+  }
