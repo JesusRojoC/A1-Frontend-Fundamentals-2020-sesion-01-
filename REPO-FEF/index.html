@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Aquí va información importante pero no visible dentro del navegador -->
     <title>Matcha</title>
     
   </head>
   <body>
     <section class="fixed-header">
-      <header class="header">
-        <!-- Logo con link a la página principal -->
-       
-        <!-- Menú de navegación -->
-        <!--<nav class="navbar">
-          <ul>
-            <li>Platform</li>
-            <li>Pricing</li>
-            <li>Customers</li>
-            <li>Resources</li>
-            <li>About</li>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+            alt="Matcha"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Platform</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
           </ul>
-        </nav>-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-          <a href="/" class="logo">
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha"/>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Platform <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Pricing <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Customers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resorces</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="form-inline my-2 my-lg-0 actions justify-content-end">
+          <form class="form-inline my-2 my-lg-0 actions justify-content-end signup-form">
             <a>Sign In</a>
             <button>Start free trial</button>
-          </div>
-        </nav>
-        <!-- Contenedor de acciones de usuario -->
-        
-      </header>
+          </form>
+        </div>
+      </nav>
     </section>
-    
     <!-- Esto es lo que se verá en el navegador web -->
     <main>
       <div class="container">
@@ -71,20 +70,25 @@
         <p>Build an <strong>amazing blog</strong></p>
   
         <form class="signup-form">
-          <input type="email" />
+          <input type="email" placeholder="Enter email address" />
           <button type="submit">
             Try it now &rarr;
           </button>
         </form>
   
-        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Capterra logo">
-        
+        <figure class="banner">
+          <img
+            src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png"
+            alt="Capterra"
+          />
+        </figure>        
       </div>
     </main>
 
     <section class="promo">
       <article class="explanatory-video">
-        <video controls
+        <video
+          controls
           poster="https://cdn.videvo.net/videvo_files/video/premium/video0036/thumbnails/computer_code00_small.jpg"
         >
           <source
@@ -101,27 +105,24 @@
           alt="See how it works"
         />
       </article>
-    
-      
-
-    <article class="publish">
-      <h3>Publish to your blog in minutes, not hours.</h3>
-      <p>
-        Your blog is your most powerful asset to build, engage, and retain a loyal
-        audience. But you don’t have hours to create content that may or may not
-        work. With Matcha, instantly publish from our library of 10,000+
-        professionally written articles and build your email list faster with our
-        powerful conversion tool.
-      </p>
-      <form>
-        <p>Start publishing today:</p>
-        <div>
-          <input type="text" placeholder="Enter email" />
-          <button>Start My Trial</button>
-        </div>
-      </form>
-    </article>
-  </section>
+      <article class="publish">
+        <h3>Publish to your blog in minutes, not hours.</h3>
+        <p>
+          Your blog is your most powerful asset to build, engage, and retain a loyal
+          audience. But you don’t have hours to create content that may or may not
+          work. With Matcha, instantly publish from our library of 10,000+
+          professionally written articles and build your email list faster with our
+          powerful conversion tool.
+        </p>
+        <form signup-form>
+          <p>Start publishing today:</p>
+          <div>
+            <input type="text" placeholder="Enter email" />
+            <button>Start My Trial</button>
+          </div>
+        </form>
+      </article>
+    </section>
 
   <section class="features">
     <article class="feature-card">
@@ -221,13 +222,258 @@
       </div>
     </article>
   </section>
-    <footer>  
-      <p>Francisco Rojo</p>
-    </footer>
+<section>
+  <article class="stories-carousel container">
+    <!-- Aquí debería estar el código que acabamos de comentar -->
+    <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+    >
+    <div class="carousel-inner">
+      <!-- Elementos del carousel van aquí -->
+    </div>
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+  </div>
+  <article class="stories-carousel">
+  <!-- Aquí debería estar el código que acabamos de comentar -->
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <div class="card-media">
+            <figure>
+              <img
+                src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                alt="Everly worker"
+              />
+            </figure>
+            <div class="company">
+              <img
+                src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                alt="Everly"
+              />
+            </div>
+          </div>
+          <div class="card-body">
+            <h4>Everly</h4>
+            <h3>
+              Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce Revenue
+              20%
+            </h3>
+            <div class="results">
+              <img
+                src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png"
+                alt="Cart icon"
+              />
+              <p>22% of monthly revenue influenced by content</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button>See Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <div class="card-media">
+            <figure>
+              <img
+                src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
+                alt="Seato Summit worker"
+              />
+            </figure>
+            <div class="company">
+              <img
+                src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png"
+                alt="Seato Summit Logo"
+              />
+            </div>
+          </div>
+          <div class="card-body">
+            <h4>Sea to Summit</h4>
+            <h3>
+              Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New Subscribers
+              820%
+            </h3>
+            <div class="results">
+              <img
+                src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png"
+                alt="Audience icon"
+              />
+              <p>500% increase in traffic from social media</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button>See Case Study</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <div class="card-media">
+            <figure>
+              <img
+                src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
+                alt="Mambe workers"
+              />
+            </figure>
+            <div class="company">
+              <img
+                src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png"
+                alt="Mambe"
+              />
+            </div>
+          </div>
+          <div class="card-body">
+            <h4>Mambe Waterproof Blankets</h4>
+            <h3>
+              How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+            </h3>
+            <div class="results">
+              <img
+                src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png"
+                alt="Target icon"
+              />
+              <p>+327% more popup conversions at a 60% lower cost</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button>See Case Study</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+  </div>
+</article>
+</section>
+
+<section class="container blog">
+
+    <div class="row">
+      <div class="col">
+        <h2 class="title">Learn how to grow your ecommerce business.</h2>
+        <article class="process-list">
+          <div class="process">
+            <div class="process-icon">
+              <img src="./icons/build.svg" alt="Build icon" />
+            </div>
+            <div class="process-description">
+              <h3>Build</h3>
+              <p>and scale your ecommerce store</p>
+            </div>
+          </div>
+          <div class="process">
+            <div class="process-icon">
+              <img src="./icons/attract.svg" alt="Attract icon" />
+            </div>
+            <div class="process-description">
+              <h3>Attract</h3>
+              <p>your target audience and grow site traffic</p>
+            </div>
+          </div>
+          <div class="process">
+            <div class="process-icon">
+              <img src="./icons/convert.svg" alt="Convert icon" />
+            </div>
+            <div class="process-description">
+              <h3>Convert</h3>
+              <p>readers to subscribers and customers</p>
+            </div>
+          </div>
+        </article>
+        <button>Read the blog</button>
+      </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+          class="card-img-top"
+          alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+          </h5>
+          <p class="metadata">
+            <strong class="category">Performance Blogging </strong>
+            <strong class="read-time">• 21 mins read</strong>
+          </p>
+          <p class="card-text">
+            Table of ContentsWhy Ecommerce Businesses Need a Blog in
+            2020Document Your Ecommerce Blog StrategyPublication: How to Create
+            High-Performing Blog ContentDistribution:...
+            <span class="read-more">+ <a>Read More</a></span>
+          </p>
+          <div class="author">
+            <img
+              src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+              alt="Shauna Ward"
+            />
+            <p>Shauna Ward</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
+          class="card-img-top"
+          alt="What Is Licensed Content and How Does It Help Your Business Grow?"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            What Is Licensed Content and How Does It Help Your Business Grow?
+          </h5>
+          <p class="metadata">
+            <strong class="category">Performance Blogging </strong>
+            <strong class="read-time">• 6 mins read</strong>
+          </p>
+          <p class="card-text">
+            TL;DR: Licensed content, sometimes called syndicated content, is
+            content produced by a professional publisher that can be legally
+            licensed for...
+            <span class="read-more">+ <a>Read More</a></span>
+          </p>
+          <div class="author d-flex align-items-center">
+            <img
+              src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&d=retro&r=g"
+              alt="Rob Glover"
+            />
+            <p>Rob Glover</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <footer>  
+    <p>Francisco Rojo</p>
+  </footer>
+
+  <script src="./app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
   
 </html>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
